@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
+using TicTacToe.Models;
 
-namespace TicTacToe
+namespace TicTacToe.Services
 {
     public class GameStore
     {

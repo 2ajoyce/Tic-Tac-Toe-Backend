@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using TicTacToe.Models;
+using TicTacToe.Services;
 
 namespace TicTacToe.Controllers
 {
