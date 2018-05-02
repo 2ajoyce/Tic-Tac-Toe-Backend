@@ -47,9 +47,9 @@ namespace TicTacToe.Controllers
         public string Join([FromBody] _playerJson request)
         {
             Game game;
-            if (request.id != null)
+            if (request.gameId != null)
             {
-                game = _GameStore.JoinGame(request.id, request.player);
+                game = _GameStore.JoinGame(request.gameId, request.player);
             }
             else
             {
@@ -82,7 +82,7 @@ namespace TicTacToe.Controllers
 
         public class _playerJson
         {
-            public string id { get; set; }
+            public string gameId { get; set; }
             public char player { get; set; }
         }
 
